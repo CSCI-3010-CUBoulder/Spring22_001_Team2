@@ -2,6 +2,7 @@
 #include <string>
 
 // Modification for step 7
+// modification number 2
 
 /* String functions section */
 
