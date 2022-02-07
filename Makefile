@@ -8,11 +8,11 @@ all: test
 
 # make test
 test: Functions.o test.cpp
-	$(CXX) $(CXXFLAGS) test.cpp -o test
+	$(CXX) $(CXXFLAGS) test.cpp Functions.o -o test
 
 Functions.o: functions_to_implement.cpp
 	$(CXX) $(CXXFLAGS) -c functions_to_implement.cpp
 
 # make clean
 clean:
-	rm test
+	rm Functions.o test
