@@ -6,6 +6,8 @@
 
 /* String functions section */
 
+// Niketh Modification- This is is a change
+
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
 
@@ -55,7 +57,13 @@ std::vector<int> Multiples(int n, int m);
 std::vector<int> SquaresUntil(int n);
 
 // takes an int, n, and returns the nth value of the fibonacci sequence (1, 1, 2, 3, 5, 8, 13, ...)
-int NthFibonacci(int n);
+int NthFibonacci(int n) {
+    for(i=0;i<n;i++){
+        if(i == n) {
+            cout<< fib(i) << endl;
+        }
+    }
+}
 
 // takes an int, n, and returns the factorial of that int (n!)
 int Factorial(int n);
